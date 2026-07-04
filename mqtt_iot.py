@@ -454,7 +454,7 @@ def plot_results(m: MetricsCollector):
     fig.legend(handles=patches, loc="lower center", ncol=6,
                fontsize=8, framealpha=0.8, bbox_to_anchor=(0.5, -0.02))
 
-    out = "/mnt/user-data/outputs/mqtt_iot_metrics.png"
+    out = "outputs/mqtt_iot_metrics.png"
     plt.savefig(out, dpi=150, bbox_inches="tight")
     print(f"\nGráfico salvo: {out}")
     return out
